@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranks of the Shadow Garden</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Unbounded', sans-serif;
+      background: linear-gradient(160deg, #0a0a15, #1c1c33);
+      color: #eaeaff;
+      padding: 2rem;
+    }h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #a383ff;
+  margin-bottom: 2rem;
+}
+
+.rank-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.rank-card {
+  background: linear-gradient(to bottom right, #1a1a2e, #2b2b44);
+  border: 2px solid #444;
+  border-left: 5px solid #a383ff;
+  border-radius: 12px;
+
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(163, 131, 255, 0.15);
+  transition: 0.3s;
+}
+
+.rank-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(163, 131, 255, 0.4);
+}
+
+.rank-title {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.rank-code {
+  font-size: 1.2rem;
+  color: #b5b5ff;
+  margin-bottom: 1rem;
+}
+
+.rank-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+
+<body>
+  <h1>Ranks of the Shadow Garden</h1>  <div class="rank-grid">
+    <div class="rank-card">
+      <div class="rank-title">Era Novice</div>
+      <div class="rank-code">D1 - D3</div>
+      <div class="rank-desc">New to the Realm. Begins training under Elite Division 6. Learns the way of the Shadows.</div>
+    </div><div class="rank-card">
+  <div class="rank-title">Shadow Learner</div>
+  <div class="rank-code">B1 - B3</div>
+  <div class="rank-desc">Assigned to a division. Takes on light duties and supports missions under mentorship.</div>
+</div>
+
+<div class="rank-card">
+  <div class="rank-title">Night Adept</div>
+  <div class="rank-code">A1 - A3</div>
+  <div class="rank-desc">Capable of handling operations solo. Has earned the respect of their Elite and Realm.</div>
+</div>
+
+<div class="rank-card">
+  <div class="rank-title">Shadow Elite</div>
+  <div class="rank-code">S1 - S3</div>
+  <div class="rank-desc">Trusted commander-level shadow. Leads teams, manages internal operations, and executes missions flawlessly.</div>
+</div>
+
+<div class="rank-card">
+  <div class="rank-title">Legendary Silent (LS)</div>
+  <div class="rank-code">Z1 / LS Rank</div>
+  <div class="rank-desc">The Realm's legends. Operate beyond command. Known only by presence and silence. Few ever reach this level.</div>
+</div>
+
+  </div>  <footer>
+
+    &copy; 2025 Shadow Garden — Rise beyond sight.
+  </footer>
+</body>
+</html>

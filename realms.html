@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realms of the Shadows</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+      /* Initial hidden state */
+  body {
+    opacity: 0;
+    transition: opacity 5s ease;
+  }
+
+  /* When page loads */
+  body.loaded {
+    opacity: 1;
+  }
+
+  /* When leaving page */
+  body.fade-out {
+    opacity: 0;
+  }
+P
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Unbounded', sans-serif;
+  background: linear-gradient(145deg, #0c0c1b, #0a0a15);
+  color: #e0e0ff;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1602953762054-b8df0f871d0d') center/cover no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #a383ff;
+  text-shadow: 0 0 20px #000000;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #bbb;
+
+  max-width: 600px;
+}
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #a383ff;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #c3c3ff;
+  margin: 1rem 0;
+}
+
+.card-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.portal-card {
+  display: block;
+  text-decoration: none;
+  color: #e0e0ff;
+  background: #1a1a2e;
+  border: 2px solid #333;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(163, 131, 255, 0.2);
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.portal-card:hover {
+  background: #23234d;
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(163, 131, 255, 0.5);
+}
+
+
+.portal-card:hover {
+  background: #23234d;
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(163, 131, 255, 0.5);
+}
+
+.achievement-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.achievement-card {
+  background: linear-gradient(to bottom right, #2a2a3d, #1a1a2e);
+  border-left: 5px solid #a383ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+}
+
+.achievement-card h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.achievement-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.see-more {
+
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.see-more a {
+  background: #a383ff;
+  color: #000;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.values {
+  background: linear-gradient(to right, #1b1b2e, #121222);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.values li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+
+    <h1>Welcome to the Realms of the Shadows</h1>
+    <p>The dark runs deep. And deeper still... we rise in silence.</p>
+  </header>  <section>
+    <h2 class="section-title">Creed of the Shadow Garden</h2>
+    <p class="quote">We do not rise to be seen. We rise to move the unseen.</p>
+    <p class="quote">We exist not for fame, but for function.</p>
+    <p class="quote">We are the order in the silence. The storm in the dark.</p>
+    <p class="quote">Shadow is not absence — it is our presence, unseen.</p>
+  </section>  <section>
+    <h2 class="section-title">What We Stand For</h2>
+    <div class="values">
+      <ul>
+        <li>Power through anonymity</li>
+        <li>Order through structure</li>
+        <li>Knowledge over noise</li>
+        <li>Execution without validation</li>
+      </ul>
+    </div>
+  </section>  <section>
+    <h2 class="section-title">Scroll of Achievements</h2>
+    <div class="achievement-cards">
+      <div class="achievement-card">
+        <h3>The Rise of the First Shadow</h3>
+        <p>Shadow Garden was born. The creed was spoken. The veil descended.</p>
+      </div>
+      <div class="achievement-card">
+        <h3>Scrolls Initiated</h3>
+        <p>The first 5 members were assigned divisions. Order began to form.</p>
+      </div>
+      <div class="achievement-card">
+        <h3>Portal Unveiled</h3>
+        <p>Realms of the Shadows page deployed with shadow transitions.</p>
+      </div>
+
+      <div class="achievement-card">
+        <h3>Quotes of the Eminence</h3>
+        <p>Core messages from Lord Shadow were inscribed for generations.</p>
+      </div>
+      <div class="achievement-card">
+        <h3>The Arrival of Alpha</h3>
+        <p>The Elite Seven began to take shape, starting with Alpha.</p>
+      </div>
+    </div>
+    <div class="see-more">
+      <a href="#">See More Scrolls</a>
+    </div>
+  </section>   
+  <section>
+  <h2 class="section-title">Portal to the Deep</h2>
+  <div class="card-link-grid">
+    <a href="ranks.html" class="portal-card">Ranks Page</a>
+    <a href="elite.html" class="portal-card">Elite Seven Page</a>
+    <a href="how we operate.html" class="portal-card">How We Operate</a>
+  </div>
+</section>
+
+   <section style="text-align: center; padding: 2rem 0;">
+    <a href="https://wa.me/2348151469850?text=I%20seek%20to%20join%20the%20Shadow%20Garden.%20Grant%20me%20passage%20beyond%20the%20veil."
+       style="font-size: 1.1rem; color: #a383ff; text-decoration: none; font-weight: bold;">
+      Join the Shadows
+    </a>
+  </section>  <footer>
+    &copy; 2025 Shadow Garden. Shadows never fade.
+  </footer>
+  <script>
+  // Fade in when page loads
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+
+  // Add transition to all page links
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = this.getAttribute('href');
+        document.body.classList.remove('loaded');
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location.href = target;
+        }, 800); // must match CSS transition duration
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
